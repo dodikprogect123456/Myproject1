@@ -5,8 +5,33 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:actoong"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="700">
-    <Grid>
-        
+        Title="MainWindow" Height="1300" Width="1600">
+    <Grid Margin="0,0,0,-21">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <TextBlock Grid.Row="0" Grid.ColumnSpan="3" Text="Please select your players" FontSize="72" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="BN Pustakel Bold"/>
+        <TextBlock Grid.Row="1" Grid.Column="1" Text="Left" FontSize="48" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="BN Pustakel Bold"/>
+        <TextBlock Grid.Row="1" Grid.Column="2" Text="Right" FontSize="48" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="BN Pustakel Bold"/>
+        <TextBox Grid.Row="2" Grid.Column="0" Name="Hadar" Text="Hadar" Foreground="Red" FontSize="48" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="BN Pustakel Bold"/>
+        <TextBox Grid.Row="3" Grid.Column="0" Name="Yedidya" Text="Yedidya" Foreground="Blue" FontSize="48" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="BN Pustakel Bold"/>
+        <TextBox Grid.Row="4" Grid.Column="0" Name="Dodick" Text="Dodick" Foreground="Orange" FontSize="48" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="BN Pustakel Bold"/>
+        <TextBox Grid.Row="5" Grid.Column="0" Name="Yoel" Text="Yoel" Foreground="LightGreen" FontSize="48" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="BN Pustakel Bold"/>
+        <TextBox Grid.Row="6" Grid.Column="0" Name="Harel" Text="Harel" Foreground="Brown" FontSize="48" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="BN Pustakel Bold"/>
+        <TextBox Grid.Row="7" Grid.Column="0" Name="Koby" Text="Koby" Foreground="Pink" FontSize="48" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="BN Pustakel Bold"/>
     </Grid>
 </Window>
