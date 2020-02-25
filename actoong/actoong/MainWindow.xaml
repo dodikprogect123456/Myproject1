@@ -5,8 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:actoong"
         mc:Ignorable="d"
-        Title="MainWindow" Height="1300" Width="1600">
-    <Grid Margin="0,0,0,-21">
+        Title="MainWindow" Height="1100" Width="1600">
+    <Grid Background="Black">
         <Grid.RowDefinitions>
             <RowDefinition Height="*" />
             <RowDefinition Height="*" />
@@ -17,21 +17,36 @@
             <RowDefinition Height="*" />
             <RowDefinition Height="*" />
             <RowDefinition Height="*" />
-            <RowDefinition Height="*" />
+            <!--<RowDefinition Height="*" />-->
+            <!--<RowDefinition Height="*" />-->
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
-        <TextBlock Grid.Row="0" Grid.ColumnSpan="3" Text="Please select your players" FontSize="72" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="BN Pustakel Bold"/>
-        <TextBlock Grid.Row="1" Grid.Column="1" Text="Left" FontSize="48" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="BN Pustakel Bold"/>
-        <TextBlock Grid.Row="1" Grid.Column="2" Text="Right" FontSize="48" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="BN Pustakel Bold"/>
-        <TextBox Grid.Row="2" Grid.Column="0" Name="Hadar" Text="Hadar" Foreground="Red" FontSize="48" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="BN Pustakel Bold"/>
-        <TextBox Grid.Row="3" Grid.Column="0" Name="Yedidya" Text="Yedidya" Foreground="Blue" FontSize="48" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="BN Pustakel Bold"/>
-        <TextBox Grid.Row="4" Grid.Column="0" Name="Dodick" Text="Dodick" Foreground="Orange" FontSize="48" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="BN Pustakel Bold"/>
-        <TextBox Grid.Row="5" Grid.Column="0" Name="Yoel" Text="Yoel" Foreground="LightGreen" FontSize="48" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="BN Pustakel Bold"/>
-        <TextBox Grid.Row="6" Grid.Column="0" Name="Harel" Text="Harel" Foreground="Brown" FontSize="48" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="BN Pustakel Bold"/>
-        <TextBox Grid.Row="7" Grid.Column="0" Name="Koby" Text="Koby" Foreground="Pink" FontSize="48" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="BN Pustakel Bold"/>
+        <TextBlock Grid.Row="0" Grid.ColumnSpan="3" Text="Please select your players" Foreground ="White" FontSize="72" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="BN Pustakel Bold"/>
+        <TextBlock Grid.Row="1" Grid.Column="1" Text="Left" Foreground ="White" FontSize="48" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="BN Pustakel Bold"/>
+        <TextBlock Grid.Row="1" Grid.Column="2" Text="Right" Foreground ="White" FontSize="48" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="BN Pustakel Bold"/>
+        <Button Grid.Row="2" Grid.Column="0" Name="Hadar" Content="Hadar" Foreground="Red" Background="Black" FontSize="48" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="BN Pustakel Bold" Opacity="0.5" Click="Hadar_Click"/>
+        <TextBox Grid.Row="2" Grid.Column="1" Name="HadarLeftBox" Background="Black" Width="50" Foreground="White" FontSize="48" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="BN Pustakel Bold" Visibility="Collapsed"/>
+        <TextBox Grid.Row="2" Grid.Column="2" Name="HadarRightBox" Background="Black" Width="50" Foreground="White" FontSize="48" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="BN Pustakel Bold" Visibility="Collapsed"/>
+        <Button Grid.Row="3" Grid.Column="0" Name="Yedidya" Content="Yedidya" Foreground="Blue" Background="Black" FontSize="48" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="BN Pustakel Bold" Opacity="0.5" Click="Yedidya_Click"/>
+        <TextBox Grid.Row="3" Grid.Column="1" Name="YedidyaLeftBox" Background="Black" Foreground="White" FontSize="48" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="BN Pustakel Bold" Visibility="Collapsed"/>
+        <TextBox Grid.Row="3" Grid.Column="2" Name="YedidyaRightBox" Background="Black" Foreground="White" FontSize="48" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="BN Pustakel Bold" Visibility="Collapsed"/>
+        <Button Grid.Row="4" Grid.Column="0" Name="Dodik" Content="Dodik" Foreground="Orange" Background="Black" FontSize="48" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="BN Pustakel Bold" Opacity="0.5" Click="Dodik_Click"/>
+        <TextBox Grid.Row="4" Grid.Column="1" Name="DodikLeftBox" Background="Black" Foreground="White" FontSize="48" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="BN Pustakel Bold" Visibility="Collapsed"/>
+        <TextBox Grid.Row="4" Grid.Column="2" Name="DodikRightBox" Background="Black" Foreground="White" FontSize="48" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="BN Pustakel Bold" Visibility="Collapsed"/>
+        <Button Grid.Row="5" Grid.Column="0" Name="Yoel" Content="Yoel" Foreground="LightGreen" Background="Black" FontSize="48" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="BN Pustakel Bold" Opacity="0.5" Click="Yoel_Click"/>
+        <TextBox Grid.Row="5" Grid.Column="1" Name="YoelLeftBox" Background="Black" Foreground="White" FontSize="48" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="BN Pustakel Bold" Visibility="Collapsed"/>
+        <TextBox Grid.Row="5" Grid.Column="2" Name="YoelRightBox" Background="Black" Foreground="White" FontSize="48" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="BN Pustakel Bold" Visibility="Collapsed"/>
+        <Button Grid.Row="6" Grid.Column="0" Name="Harel" Content="Harel" Foreground="Brown" Background="Black" FontSize="48" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="BN Pustakel Bold" Opacity="0.5" Click="Harel_Click"/>
+        <TextBox Grid.Row="6" Grid.Column="1" Name="HarelLeftBox" Background="Black" Foreground="White" FontSize="48" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="BN Pustakel Bold" Visibility="Collapsed"/>
+        <TextBox Grid.Row="6" Grid.Column="2" Name="HarelRightBox" Background="Black" Foreground="White" FontSize="48" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="BN Pustakel Bold" Visibility="Collapsed"/>
+        <Button Grid.Row="7" Grid.Column="0" Name="Koby" Content="Koby" Foreground="Pink" Background="Black" FontSize="48" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="BN Pustakel Bold" Opacity="0.5" Click="Koby_Click"/>
+        <TextBox Grid.Row="7" Grid.Column="1" Name="KobyLeftBox" Background="Black" Foreground="White" FontSize="48" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="BN Pustakel Bold" Visibility="Collapsed"/>
+        <TextBox Grid.Row="7" Grid.Column="2" Name="KobyRightBox" Background="Black" Foreground="White" FontSize="48" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="BN Pustakel Bold" Visibility="Collapsed"/>
+        <Button Grid.Row="9" Grid.ColumnSpan="3" Name="Start"
+                Content="Press here to start" Foreground="Yellow" Background="Black" FontSize="72" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="BN Pustakel Bold" Opacity="0.5" Click="Start_Click"/>
     </Grid>
 </Window>
